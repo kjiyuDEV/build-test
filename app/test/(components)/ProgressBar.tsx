@@ -4,7 +4,7 @@ interface ProgressBarProps {
 }
 
 export default function ProgressBar({ current, total }: ProgressBarProps) {
-  const progress = (current / total) * 100;
+  const progress = ((current - 1) / (total - 1)) * 100;
 
   return (
     <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">

@@ -21,14 +21,19 @@ export function calculateMBTI(answers: Array<{ type: string }>) {
     P: 0,
   };
 
-  // 각 답변 카운트
+  // 각 답변 카운트 (슬래시로 구분된 두 특성을 각각 카운트)
   answers.forEach((answer) => {
-    count[answer.type as keyof MBTICount]++;
+    const types = answer.type.split("/");
+    types.forEach((type) => {
+      count[type as keyof MBTICount]++;
+    });
   });
+
+  console.log(count, "<count>");
 
   // MBTI 결과 계산
   const result = [
-    count.I > count.E ? "I" : "E",
+    count.E > count.I ? "E" : "I",
     count.S > count.N ? "S" : "N",
     count.T > count.F ? "T" : "F",
     count.J > count.P ? "J" : "P",

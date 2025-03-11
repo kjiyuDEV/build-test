@@ -8,9 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "deploy": "next build && type nul > out/.nojekyll && gh-pages -d out --dotfiles"
   },
-  "homepage": "https://kjiyuDEV.github.io/build-test",
+  "homepage": "https://kjiyudev.github.io/build-test",
   "dependencies": {
     "framer-motion": "^12.4.10",
     "next": "15.2.1",
