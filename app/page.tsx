@@ -36,7 +36,7 @@ export default function MBTITest() {
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center mb-12">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              우영미 메롱😛
+              응답지 조정중😛
             </h1>
             <p className="text-gray-600">김지유가 젤 쎔</p>
           </div>
