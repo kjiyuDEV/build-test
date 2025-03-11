@@ -3,9 +3,6 @@ import { motion } from "framer-motion";
 interface Option {
   text: string;
   value: string;
-  mbtiType: {
-    type: "I" | "E" | "S" | "N" | "T" | "F" | "J" | "P";
-  };
 }
 
 interface QuestionCardProps {
