@@ -44,7 +44,19 @@ export default function MBTITest() {
 
                     {result ? (
                         // 결과 화면
-                        <ResultContents mbtiType={result} />
+                        <>
+                            <ResultContents mbtiType={result} />
+                            <button
+                                onClick={() => {
+                                    setCurrentQuestion(1);
+                                    setAnswers([]);
+                                    setResult(null);
+                                }}
+                                className="w-full px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+                            >
+                                다시 테스트하기
+                            </button>
+                        </>
                     ) : (
                         // 질문 화면
                         <>

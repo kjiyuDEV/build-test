@@ -7,7 +7,7 @@ const ResultContents = ({ mbtiType }: { mbtiType: string }) => {
     const characters = RESULT[mbtiType as keyof typeof RESULT];
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-white p-8">
+        <div className="bg-gradient-to-b mb-0 from-indigo-50 to-white p-8">
             <div className="container">
                 <motion.h1
                     className="text-5xl font-bold text-center mb-6 text-gray-900"
